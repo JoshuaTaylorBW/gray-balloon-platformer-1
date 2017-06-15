@@ -4,6 +4,7 @@ using System;
 using System.Text;
 using System.IO; 
 using System.Collections.Generic;
+using UnityEngine.WSA;
 
 public class FlareMap : MonoBehaviour {
 

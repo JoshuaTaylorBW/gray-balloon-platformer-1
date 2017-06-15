@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.WSA;
 
 public class Death : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
