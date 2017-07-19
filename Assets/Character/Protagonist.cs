@@ -1,4 +1,4 @@
-using UnityEngine;
+ using UnityEngine;
 using System.Collections;
 using UnityEngine.WSA;
 
@@ -248,7 +248,6 @@ public class Protagonist : MonoBehaviour {
 		velocity.x = currSpeed;
 		if(beingPushed)
 		{
-			Debug.Log("bieng pushed");
 			velocity = new Vector3(
 				0f,
 				velocity.y,
@@ -303,6 +302,10 @@ public class Protagonist : MonoBehaviour {
 	void leftPush(float pushTime)
 	{
 		beingPushed = true;
+		running = false;
+		Jumping = false;
+		Falling = false;
+		stopJumping = false;
 
 		if(pushTime == -1)
 		{
@@ -313,7 +316,7 @@ public class Protagonist : MonoBehaviour {
 		{
 			StartCoroutine(pushForX(pushTime));
 		}
-			
+
 
 	}
 
