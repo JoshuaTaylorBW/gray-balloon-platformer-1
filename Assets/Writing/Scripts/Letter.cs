@@ -5,12 +5,12 @@ using System;
 
 public class Letter : MonoBehaviour
 {
-    public RuntimeAnimatorController capitalA;
-    Animator letterAnimator;
-    char letter;
+  public RuntimeAnimatorController capitalA;
+  Animator letterAnimator;
+  char letter;
 	GameObject protagonist;
-    private Sprite sprite;
-    private String s;
+  private Sprite sprite;
+  private String s;
 	private float endPosition;
 	private Rigidbody rb;
 
